@@ -1,38 +1,35 @@
 # Table of Contents
 - [Description](#description)
-  - [Background](#background)
-  - [What we're evaluating](#what-were-evaluating)
-  - [What we're not evaluating](#what-were-not-evaluating)
+- [Submission](#submission)
+- [Background](#background)
 - [Getting Started](#getting-started)
   - [Basic Setup](#basic-setup)
   - [Key tools and concepts](#key-tools-and-concepts)
   - [Interfacing with Noyo's APIs](#interfacing-with-noyos-apis)
 - [Your Tasks](#your-tasks)
+- [What we're evaluating](#what-were-evaluating)
+- [What we're not evaluating](#what-were-not-evaluating)
+- [Thanks](#thanks)
 
 ## Description
 This is the front-end component to our full-stack coding challenge. The main instructions are in this readme, but the back-end can be found in [this repository](https://github.com/noyo-technologies/fullstack-coding-challenge-api)
 
 For the take-home portion of this exercise, you can refer to the [tasks below](#your-tasks). 
 
-There will also be a live coding session which _will include updating both_ the back-end and front-end apps. The goal of the that session will not be a race against the clock, but you can view it as a collaboration session as if you were pairing with another engineer at Noyo.
+**There will also be a live coding session which _will include updating both_ the back-end and front-end apps. The goal of the that session will not be a race against the clock, but you can view it as a collaboration session as if you were pairing with another engineer at Noyo.**
 
-### Background
+## Submission
+
+Zip up your code and email it to coding-challenge at noyo dot com no later than 24 hrs before your interview 😄
+
+The take-home portion should only require updates in this repository.
+
+## Background
 
 One of our biggest challenges at Noyo is understanding how our data changes over time and why. This allows us to understand the state of our system when a given transaction was executed, and to inspect how and why the data changed since the request was made. It allows us to answer important questions such as:
 
 * What was the exact address on file for an employee when a transaction was performed X days ago?
 * What exactly was changed about the mailing address of this employee when the last update occurred?
-
-### What we're evaluating
-* Whenever you start a new job, you encounter code other people wrote, and you'll have to understand the architecture and write code to match it.
-* Does your code do what it's supposed to do without obvious errors or bugs?
-* Can you debug a problem in some unfamiliar code? How did you go about debugging?
-
-### What we're not evaluating
-* *Your design skills.* Our designers welcome your feedback, but we don't expect our devs to also be designers.
-* *Your ability to bootstrap a new application.* Hopefully you don't have to do this many times at Noyo, which is why we've provided a running application.
-* *Building things from scratch* with no code to work from.
-* *Automated testing*: We believe this is an important part of development work, but are not expecting it for this assignment, unless you find yourself with extra time. 
 
 
 ## Getting Started
@@ -98,9 +95,16 @@ As such, we want this app to try to recover if it starts up and fails to connect
 * If the status code of any request is in the 400 range, we should treat this as success for the purposes of our retry logic, but we should still show an error message.
 * The retry logic should only apply to fetching user IDs, not addreses or events.
 
+### What we're evaluating
+* Whenever you start a new job, you encounter code other people wrote, and you'll have to understand the architecture and write code to match it.
+* Does your code do what it's supposed to do without obvious errors or bugs?
+* Can you debug a problem in some unfamiliar code? How did you go about debugging?
 
-## Time management:
-We expect you to spend up to 2 hours on this coding challenge, including setup and famliarization. Coding may involve race conditions, but it's not a race. **We do NOT believe speed is the best measure of proficiency**.
+### What we're not evaluating
+* *Your design skills.* Our designers welcome your feedback, but we don't expect our devs to also be designers.
+* *Your ability to bootstrap a new application.* Hopefully you don't have to do this many times at Noyo, which is why we've provided a running application.
+* *Building things from scratch* with no code to work from.
+* *Automated testing*: We believe this is an important part of development work, but are not expecting it for this assignment, unless you find yourself with extra time. 
 
 ## Thanks!
 We make every effort to demonstrate that we see your time as valuable, and we will make every attempt throughout the interview process not to waste it. Nonetheless, we know you're making a big time commitment and we're sincerely appreciative of both your time and your interest in working at Noyo.
